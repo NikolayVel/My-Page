@@ -1,0 +1,175 @@
+#experience .experience-container {
+    /* background: var(--light-gray); */
+    background: #fff;
+    width: calc(100vw - 250px); 
+    flex: auto;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    color: var(--black-light);
+    /* justify-content: center; */
+
+}
+
+@media (max-width: 700px) {
+    #experience .experience-container {
+        background: var(--light-gray);
+        width: 100vw; 
+        
+    }
+    #experience .experience-timeline {
+        /* position: relative;
+        min-width: calc(100vw - 250px);
+        max-width: 1100px; */
+        width: 100vw;
+    }
+}
+
+
+#experience .experience-header {
+    /* background: var(--dark-gray); */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+#experience .experience-header::before {
+    content: '';
+    position: absolute;
+    background: var(--middle-gray);
+    width: 100%;
+    height: 150px;
+    
+    
+    opacity: 1;
+    z-index: 0;
+}
+
+#experience .experience-header h1 {
+    position: relative;
+    font-size: 80px;
+    /* top: 20px; */
+    color: var(--dark-gray);
+    opacity: 0.05;
+    margin: auto;
+    z-index: 1;
+    
+}
+#experience .experience-header h2 {
+    color: var(--black-light);
+    font-size: 30px;
+    border-bottom: 1px solid var(--dark-green);
+    position: absolute;
+    z-index: 2;
+}
+
+/* Timeline */
+
+#experience .experience-timeline {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    line-height: 1.2rem;
+
+}
+
+#experience .experience-timeline .exp-box {
+    margin: 15px;
+    padding: 10px;
+    border: 1px dotted var(--dark-green);
+    width: 40%;
+}
+
+#experience .experience-timeline .exp-years {
+    background: var(--dark-green);
+    color: #fff ;
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+#experience .experience-timeline .exp-title {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    font-weight: 550;
+}
+
+#experience .experience-timeline .exp-company {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    color: var(--dark-green);
+}
+
+/* Skills */
+#experience .skills-container {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    line-height: 1.2rem;
+}
+
+#experience .skills-container>h2 {
+    width: 100%;
+    /* /* align-items: left  ; */
+    text-align: center;
+    /* margin-left: 100px; */
+    
+}
+
+#experience .skills-container .skills-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#experience .skills-container .skills-boxes .box {
+    margin: 3px 15px;
+    padding: 10px;
+    /* border: 1px dotted var(--dark-green); */
+    width: 440px;
+    display: flex;
+    flex-direction: column  ;
+}
+
+#experience .skills-container .skills-boxes .box .text {
+    display: flex;
+justify-content: space-between;
+    margin: 5px 10px;
+}
+
+
+#experience .skills-container .skills-boxes .box .bar{
+    width: 95%;
+    height: 4px;
+    margin: 10px;
+    background: var(--middle-gray);
+    border: 0.5px solid var(--dark-gray);
+    position: relative;
+}
+
+#experience .skills-container .skills-boxes .box .bar:after{
+    content: '';
+    width: 60%;
+    height: 4px;
+    margin: -1px;
+    background: var(--dark-green);
+    /* border: 0.5px solid var(--dark-gray); */
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+}

@@ -1,0 +1,79 @@
+
+
+#home .hero-container {
+    
+    background: url('/img/office-medium.jpg') no-repeat center center/cover;
+    width: calc(100vw - 250px);
+    height: 100vh; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#home .hero-container::before {
+    content: '';
+    position: absolute;
+    width: calc(100vw - 250px);
+    height: 100vh; 
+    background: var(--black-light);
+    z-index: 0;
+    opacity: 0.8;
+}
+
+#home .hero-container .color-white {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+#home .hero-container h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+#home .hero-container h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    
+}
+#home .hero-container h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    
+}
+
+#home .contact-btn {
+    text-decoration: none;
+    background: var(--dark-green);
+    color: var(--light-gray);
+    font-weight: bold;
+    padding: 10px;
+    border: 3px solid var(--dark-green);
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 2;
+    
+}
+
+@media (max-width: 700px) {
+    #home .hero-container {
+        /* background: var(--light-gray); */
+        width: 100vw; }
+
+        #home .hero-container::before {
+            width: 100vw;
+        }
+
+
+    }
+

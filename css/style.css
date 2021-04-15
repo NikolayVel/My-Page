@@ -1,0 +1,67 @@
+@import url('navigation.css');
+@import url('main.css');
+@import url('personality.css');
+@import url('footer.css');
+@import url('education.css');
+@import url('experience.css');
+@import url('contact.css');
+
+:root {
+    --black-light: #111418;
+    --light-gray: #f4f4f4;
+    --middle-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --dark-green: #266150;
+
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* TODO change background color to something darker when ready  */
+    /* background: chartreuse;  */
+    display: flex;
+    flex-wrap: nowrap;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.green-text {
+    color: var(--dark-green);
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    display: none;
+}
+
+/* .align-right {
+    text-align: right;
+} */
+
+
+
+
+

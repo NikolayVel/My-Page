@@ -1,0 +1,157 @@
+#personality .hero-container {
+    
+    background: var(--light-gray);
+    width: calc(100vw - 250px); 
+    flex: auto;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    /* justify-content: center; */
+
+    
+    color: var(--black-light);
+}
+
+#personality .personality-header {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 100px;
+    text-align: center ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#personality .personality-header h1 {
+    /* width: 4000px; */
+    position: absolute;
+    color: var(--dark-gray);
+    font-size: 70px;
+    font-weight: bolder;
+    opacity: 0.05;
+    
+    
+    
+}
+
+#personality .personality-header h2 {
+    /* width: 300px; */
+    position: absolute;
+    /* margin-top: 25px; */
+    font-weight: bold;
+    color: var(--black-light);
+    border-bottom: var(--dark-green) 2px solid;
+} 
+
+#personality .personality-details {
+    max-width: 1100px;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    flex-wrap: nowrap;
+    line-height: 1.5rem;
+    margin-top: 30px;
+}
+
+#personality .personality-details .details-text {
+    width: 60%;
+    padding: 10px;
+
+}
+#personality .personality-details .details-text p {
+    padding: 5px 0;
+    padding-right: 5px;
+}
+
+#personality .personality-details .details-table {
+    width: 40%;
+    padding: 10px;
+}
+#personality .personality-details .details-table ul{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#personality .personality-details .details-table ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1.5px var(--dark-green) dotted;
+}
+#personality .personality-details .details-table ul li:last-child {
+    border-bottom: none;
+    
+}
+
+#personality .personality-hobbies{
+    max-width: 1100px;
+
+    position: relative;
+    display: flex;
+    padding: 20px;
+    flex-wrap: nowrap;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+#personality .personality-hobbies .hobbies-container {
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    /* background: royalblue; */
+
+}
+
+#personality .personality-hobbies .hobbies-container .mtb {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#personality .personality-hobbies .hobbies-container .family {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+    height: 50px;
+    /* background: green; */
+}
+ .family-photo {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#personality .personality-hobbies .hobbies-container .motorcycling {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#personality .personality-hobbies .hobbies-container .snowboarding {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    /* visibility: hidden; */
+    
+}
+
+@media (max-width: 700px) {
+    #personality .hero-container {
+        /* background: var(--light-gray); */
+        width: 100vw; }
+
+       
+
+    }
